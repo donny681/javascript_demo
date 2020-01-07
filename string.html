@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+    <head></head>
+    <body>
+        <script>
+            var str='the public of China China'
+            var pos=str.indexOf("China")    
+            console.log(pos)
+            str='the public of China the public of China'
+            pos=str.lastIndexOf("China")
+            console.log(pos)
+            pos=str.search('China')
+            console.log(pos)
+            pos=str.slice(4,13)
+            console.log(pos)
+            pos=str.slice(-13,-6)
+            console.log(pos)
+            pos=str.substr(-3)
+            console.log(pos)
+            str='Please visit Microsoft and Microsoft!'
+            var n=str.replace("Microsoft","W3School")//注意，只是替换第一个
+            console.log(n)
+            str='Please visit Microsoft!'
+            var m=str.replace(/MICROSOFT/i,"W3School")
+            console.log(m)
+            str='Please visit Microsoft and Microsoft!'
+            var k=str.replace(/Microsoft/g,"W3School");
+            console.log(k)
+            var j=str.replace(/MICROSOFT/ig,"W3School");
+            console.log(j)
+            var text1="Hello World!";
+            var text2=text1.toUpperCase();//转为大写
+            var text3=text1.toLowerCase()
+            console.log(text2)
+            console.log(text3) 
+            text3=text1.concat("",text2)
+            console.log(text3)
+            str=" Hello world  "
+            console.log(str.trim())
+            str="   Hello World   "
+            var buf=str.replace(/^[\s\uFEFF\xA0]+[\s\uFEFF\xA0]+$/g)
+            console.log(buf)
+            var buffer="HELLO WORLD"
+            
+            console.log(buffer.charAt(2))
+            console.log(buffer.charCodeAt(2))
+            var txt="a,b,c,d,e"
+            console.log(txt.split(","))
+        </script>
+    </body>
+</html>
+
