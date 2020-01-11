@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <body>
+            <script>
+            var time=new Date()
+            console.log(time)
+            time =new Date(2020,1,8)
+            console.log(time)
+            time=new Date("January 1,2020 14:32:00")
+            console.log(time)
+            time =new Date(20,1,2)
+            console.log(time)
+            time=new Date(0)
+            console.log(time.toDateString(time))
+
+            //ISO日期
+            time =new Date("2020-1-8")
+            console.log(time)
+            time =new Date("2018")
+            console.log(time)
+
+            //返回自1970年1月1日以来的毫秒数
+            time =new Date()
+            console.log(time.getTime())
+            //得到年份
+            console.log(time.getFullYear())
+            //得到月份（0-11）
+            console.log(time.getMonth())
+            console.log(time.getDate())
+            console.log(time.getHours())
+            console.log(time.getMinutes())
+            console.log(time.getSeconds())
+            console.log(time.getMilliseconds())
+            console.log(time.getDay())
+            console.log(time.getUTCDate())
+            
+            </script>
+            
+            </body>
+        </body>
+    </head>
+</html>

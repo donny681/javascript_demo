@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head></head>
+    <body>
+        <script>
+        function Person(first,last,age,eye){
+            this.firstName=first;
+            this.lastName=last;
+            this.age=age;
+            this.eyeColor=eye;
+        }
+        var myFather=new Person("Bill","Gates",14,"blue")
+        myFather.nationality="English"
+        console.log(myFather.firstName+" "+myFather.lastName+" "+myFather.nationality)
+        </script>
+        <script>
+        function Person1(first,last,age,eye)
+        {
+            this.firstName=first;
+            this.lastName=last;
+            this.age=age;
+            this.eyeColor=eye;
+        }
+        Person1.prototype.name=function(){
+            return this.firstName+" "+this.lastName
+        };
+        var myfriend=new Person1("Bill","Gates",62,"blue");
+        console.log(myfriend.name())
+        </script>
+        <script>
+        var person2={
+            firstName:"Bill",
+            lastName: "Gates",
+            language:"EN"
+        };
+        Object.defineProperty(person2,"language",{value:"ZH"})
+        console.log(person2.language)
+        </script>
+    </body>
+</html>

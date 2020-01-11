@@ -46,6 +46,53 @@
             console.log(buffer.charCodeAt(2))
             var txt="a,b,c,d,e"
             console.log(txt.split(","))
+            var fruit=["Banana","orange","apple","mango"]
+            console.log(fruit.toString())
+            var fruit=["Banana","orange","Apple","Mango"]
+            //pop() 方法返回“被弹出”的值：
+            console.log(fruit.pop());
+            console.log(fruit.pop());
+            console.log(fruit.pop());
+            console.log(fruit.pop());
+            //push() 方法（在数组结尾处）向数组添加一个新的元素：
+            console.log(fruit.push("Mary"));
+
+            var fruit=["Banana","orange","apple","mango"]
+            console.log(fruit.shift());
+            console.log(fruit.shift());
+            console.log(fruit.shift());
+            fruit[0] = "Kiwi"; 
+            console.log(fruit)
+            fruit=["Banana","orange","apple","mango"] 
+            fruit[fruit.length]="Kiwi"
+            delete fruit[0]
+            console.log(fruit)
+            console.log(fruit.shift())
+            console.log(fruit)
+            console.log("splice")
+            fruit=["Banana","orange","apple","mango"] 
+            
+            console.log(fruit.splice(2,0,"lemon","dargon"))00
+            console.log(fruit)
+
+            /*concat*/
+            var mGirls=["Cecilie","Lone"]
+            var mBoys=["Emil","Tobias","Linus"]
+            var myChildren=mGirls.concat(mBoys);
+            console.log(myChildren)
+
+            var arr1=["A","B"]
+            var arr2=["C","D"]
+            var arr3=["E","F"]
+            var text=arr1.concat(arr2,arr3)
+            console.log(text)
+
+            fruit=["Banana","orange","apple","mango"]
+            console.log(fruit.slice(1))
+
+            console.log(fruit.toString())
+
+            
         </script>
     </body>
 </html>

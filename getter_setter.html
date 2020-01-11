@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <body>
+            <script>
+            var person={
+                firstName:"Bill",
+                lastName:"Gates",
+                language:"en",
+                get lang(){
+                    return this.language
+                },
+                set setlang(lang1){
+                    this.language=lang1;
+                    console.log("here")
+                }
+            };
+            console.log(person.lang)
+            person.setlang="cn"
+            </script>
+        </body>
+    </head>
+</html>

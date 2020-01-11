@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+    <head></head>
+    <body>
+        <script>
+        function add(a,b){//函数生命
+            return a+b;
+        }
+        var c=add(1,2)
+        console.log(c)
+        </script>
+        <script>
+            var x=function(a,b){return a*b;}//函数表达式
+            var z=x(4,3);
+            console.log(z);
+        </script>
+        <script>
+        var myFunction=new Function("a","b","return a*b");
+        var x= myFunction(4,3);
+        console.log(x)
+        </script>
+        <script>
+        (function(){
+            console.log("hexo");
+        })()
+        </script>
+        <script>
+            function myFunction(a,b)
+            {
+                return arguments.length;
+            }
+            console.log(myFunction(1,2))
+        </script>
+        <script>
+        const k=(xk,y)=>k*y;
+        console.log((5,5))
+        </script>
+        <script>
+            var person={
+                fullName:function(){
+                    return this.firstName+" "+this.lastName;
+                },
+                fullName2:function(){
+                    return this.lastName+" "+this.firstName;
+                }
+            }
+            
+            var person1={
+                firstName:"Bill",
+                lastName:"Gates",
+            }
+            var person2={
+                fisrstName:"Steve",
+                lastName:"Jobs",
+            }
+            console.log(person.fullName2.call(person1))
+        </script>
+        <script>
+        function add(){
+            var  counter=0;
+            function plus(){counter+=1;}
+            plus();
+            return counter;
+        }
+        add();
+        add();
+        console.log(add())
+        </script>
+        <script>
+        var add =(function(){
+            var counter=0;
+            return function(){return counter+=1;}
+        })();
+        add();
+        add();
+        console.log(add());
+        </script>
+    </body>
+</html>
